@@ -12,6 +12,9 @@ module.exports = {
     'import',
     'unused-imports',
   ],
+  globals: {
+    'JSX': true,
+  },
   extends: [
     'es/node',
     'eslint:recommended',

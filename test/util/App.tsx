@@ -1,7 +1,7 @@
-import * as React from 'react'
+import * as React from 'react';
 
-function App({ data }: { data: string }) {
-  return <div>{data}</div>
+function app({ data }: { data: string }): JSX.Element {
+  return <div>{data}</div>;
 }
 
-export default App;
+export default app;

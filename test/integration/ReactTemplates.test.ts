@@ -1,5 +1,5 @@
-import { fetch } from 'cross-fetch';
 import type { App } from '@solid/community-server';
+import { fetch } from 'cross-fetch';
 import { instantiateFromConfig, getTestConfigPath, getDefaultVariables } from './Config';
 
 const port = 3000;
@@ -29,7 +29,7 @@ describe('A Solid server with react template rendering', (): void => {
         headers: { accept: 'text/html' },
       });
       expect(res.status).toBe(200);
-      const text = await res.text()
+      const text = await res.text();
       expect(text).toBe('<div></div>');
     });
   });
